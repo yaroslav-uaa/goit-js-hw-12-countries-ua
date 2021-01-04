@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+body {
+  background: #908a96;
+  color: #291a0b;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 24px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 6%;
+  font-size: 54px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+input {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 30px;
+  padding: 10px;
+  display: block;
+  width: 40%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+  border: 1px black;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+  list-style-type: square;
+}
+
+/* ============== */
+
+h1.country {
+  margin-top: 30px;
+}
+
+.countryCard {
+  padding: 20px;
+  background-color: #d8c4eb;
+  display: flex;
+  justify-content: center;
+  border: 2px dashed #103c5a;
+}
+
+.flag {
+  width: 350px;
+  height: 335px;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.form-control {
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 40px;
+  width: 538px;
+}
+
+.countries-list {
+  font-size: 24px;
+  font-weight: bold;
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto;
+}
