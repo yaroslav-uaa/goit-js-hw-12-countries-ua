@@ -4,10 +4,9 @@ import countryCard from "../templates/countryCard.hbs";
 import countryList from "../templates/countryList.hbs";
 import "@pnotify/core/dist/BrightTheme.css";
 import "@pnotify/core/dist/PNotify.css";
-
 // Підключення дебанса і нотіфай
-const { error } = require("@pnotify/core");
-const debounce = require("lodash.debounce");
+import { error } from "@pnotify/core";
+import debounce from "lodash.debounce";
 // Слухач на форму з відтермінуванням
 const refs = getRefs();
 
@@ -17,7 +16,10 @@ function searchInputHandler(e) {
   e.preventDefault();
   clearCountries();
   const searchQuery = e.target.value;
-
+  // Якщо пустий інпут
+  if (!searchQuery) {
+    return;
+  }
   countrySearch
     .fetchCountry(searchQuery)
     .then((data) => {
